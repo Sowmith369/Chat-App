@@ -1,3 +1,4 @@
+import e from "express";
 import  mongoose from "mongoose";
 
 const db = async (req, res) => {
