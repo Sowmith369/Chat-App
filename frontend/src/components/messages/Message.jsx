@@ -10,6 +10,8 @@ export default function Message() {
             />
         </div>
     </div>
+    <div className="chat-bubble text-white text-sm pb-2">Hi what is up?</div>
+    <div className="chat-footer opacity-50 text-xs flex gap-1 items-center">11:59 AM</div>
     </div>
   );
 };
