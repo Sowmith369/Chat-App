@@ -15,10 +15,12 @@ const Login = () => {
 
 	return (
 		<div className='flex flex-col items-center justify-center min-w-96 mx-auto'>
+			<span className='text-5xl text-teal-500 mb-2'> ChatApp</span>
 			<div className='w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
+			
 				<h1 className='text-3xl font-semibold text-center text-gray-300'>
 					Login
-					<span className='text-blue-500'> ChatApp</span>
+					
 				</h1>
 
 				<form onSubmit={handleSubmit}>
@@ -29,7 +31,7 @@ const Login = () => {
 						<input
 							type='text'
 							placeholder='Enter username'
-							className='w-full input input-bordered h-10'
+							className='w-full input input-accent input-bordered h-10'
 							value={username}
 							onChange={(e) => setUsername(e.target.value)}
 						/>
@@ -42,7 +44,7 @@ const Login = () => {
 						<input
 							type='password'
 							placeholder='Enter Password'
-							className='w-full input input-bordered h-10'
+							className='w-full input input-accent input-bordered h-10'
 							value={password}
 							onChange={(e) => setPassword(e.target.value)}
 						/>

@@ -4,14 +4,16 @@ import cookieParser from 'cookie-parser';
 
 import db from "./DB/Database.js";
 
-
 import authRoutes from "./routes/auth.routes.js";
 import messageRoutes from "./routes/message.routes.js";
 import userRoutes from "./routes/user.routes.js";
 
+import { app,server } from './socket/socket.js';
+
+
 dotenv.config();
 
-const app = express();
+
 const PORT = process.env.PORT || 5000;
 
 
@@ -26,7 +28,7 @@ app.get('/', (req, res) =>{
     res.send('Hello, World!'); 
 });
 
-app.listen(PORT, () => {
+server.listen(PORT, () => {
     db();
     console.log(`listening on port: ${PORT}`);
 });
